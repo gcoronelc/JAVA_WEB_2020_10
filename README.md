@@ -1,4 +1,4 @@
-![DESARROLLADOR JAVA WEB](https://raw.githubusercontent.com/gcoronelc/JAVA_WEB_2020_10/master/img/logo.png)
+![DESARROLLADOR JAVA WEB](https://raw.githubusercontent.com/gcoronelc/JAVA_WEB_2020_10/main/img/logo.png)
 
 # PROGRAMADOR JAVA
 
