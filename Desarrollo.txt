@@ -1,0 +1,35 @@
+PROFESOR: GUSTAVO CORONEL CASTILLO
+
+CLASE 01
+----------------------------------------------
+1.- Repositorio en GitHub.
+2.- Introducción a Base de Datos
+3.- Introducción a Oracle
+4.- El esquema de Trabajo: EUREKA
+5.- conexión
+6.- Statement
+7.- PreparedStatement
+
+CLASE 01
+----------------------------------------------
+1.- CollableStatement
+2.- Consultas
+3.- Iniciado EurekaApp
+4.- Login
+
+
+
+chr_cuencodigo     not null char(8)      
+int_movinumero     not null number(6)    
+dtt_movifecha      not null date         
+chr_emplcodigo     not null char(4)      
+chr_tipocodigo     not null char(3)      
+dec_moviimporte    not null number(12,2) 
+chr_cuenreferencia          char(8) 
+
+
+insert into movimiento(chr_cuencodigo,int_movinumero,dtt_movifecha,chr_emplcodigo,chr_tipocodigo,dec_moviimporte)
+values(?,?,sysdate,?,?,?)
+/
+
+select sysdate from dual;

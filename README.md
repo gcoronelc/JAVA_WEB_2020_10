@@ -15,7 +15,7 @@
 
 # DOCENTE
 
-- Docente: Eric Gustavo Coronel Castillo
+- Docente: Eric Gustavo Coronel Castillo (GCOROENLC)
 - Blog: www.desarrollasoftware.com
 - Correo para el curso: egcc.uni@gmail.com
 - Pagina personal: http://gcoronelc.github.io/
