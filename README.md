@@ -1,13 +1,13 @@
 ![DESARROLLADOR JAVA WEB](https://raw.githubusercontent.com/gcoronelc/JAVA_WEB_2020_10/main/img/logo.png)
 
-# PROGRAMADOR JAVA
+# DESARROLLADOR JAVA WEB
 
 - Lugar: SistemasUNI
 - Horario: SABADOS DE 08 a 14 Horas
-- Inicio: 08-AGO-2020
+- Inicio: 17.SET.2020
 - Duración: 24 Horas
 - Dirección: https://goo.gl/maps/98vwAt9NZMU2
-- Youtube: https://n9.cl/gcoronelc-javaoo
+- Youtube: https://n9.cl/gcoronelc-javaweb
 - Página: http://gcoronelc.blogspot.com/p/java.html
 - Código fuente: https://goo.gl/GRaOQg
 - Grupo de WS: https://chat.whatsapp.com/H6BBebNDZHEAqAk6gTU5ZS
@@ -18,11 +18,19 @@
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: www.desarrollasoftware.com
 - Correo para el curso: egcc.uni@gmail.com
+- Pagina personal: http://gcoronelc.github.io/
 - Canal Youtube: https://www.youtube.com/DesarrollaSoftware
 - UDEMY: https://github.com/gcoronelc/UDEMY
 - Facebook 1: https://www.facebook.com/groups/universidadjava/
 - Facebook 2: https://www.facebook.com/groups/desarrollasoftware/
 - Facebook 3: https://www.facebook.com/groups/bolsa.sistemas/
+
+
+# JAVA WEB
+ 
+- Lección 01 - Servlets: http://goo.gl/9KaN3C
+- Lección 02 - JSP: http://goo.gl/owauvS
+- Lección 03 - MVC: http://goo.gl/nvLv16
 
 
 # YUTUBE
@@ -37,7 +45,11 @@
 - WS SOAP EJEMPLO 2: https://bit.ly/39PalrT
 
 
-# RECURSOS DEL CURSO
+
+
+
+
+# RECURSOS DE JAVA ORIENTADO A OBJETOS
 
 - Recursos: https://github.com/gcoronelc/recursos
 - Imagenes: https://github.com/gcoronelc/imagenes
@@ -56,15 +68,13 @@
 
 # CURSOS VIRTUALES
 
-## CUPONES UDEMY
 
-- Enlace: https://github.com/gcoronelc/UDEMY
+## FUNDAMENTOS DE PROGRAMACIÓN CON JAVA
 
-## ORACLE PL/SQL
+- Enlace: https://www.udemy.com/course/fund-java/?referralCode=59EF4456EC0F433C641E
 
-- Enlace: https://www.udemy.com/course/lenguaje-plsql/?referralCode=3B8A67CA0AADFCFB930C
+[![FUNDAMENTOS DE PROGRAMACIÓN CON JAVA](https://raw.githubusercontent.com/gcoronelc/UDEMY/master/cursos/fp_java.png)](https://youtu.be/1mcdHGywMvk "FUNDAMENTOS DE PROGRAMACIÓN CON JAVA")
 
-[![ORACLE PL/SQL](https://raw.githubusercontent.com/gcoronelc/UDEMY/master/cursos/plsql.png)](https://youtu.be/qf5IF2dJtQc "ORACLE PL/SQL")
 
 ## JAVA ORIENTADO A OBJETOS
 
@@ -77,6 +87,13 @@
 - Enlace: https://www.udemy.com/course/java-jdbc-oracle/?referralCode=C518C8D3028403F7F6DF
 
 [![JAVA JDBC CON BASE DE DATOS ORACLE](https://raw.githubusercontent.com/gcoronelc/UDEMY/master/cursos/jdbc.png)](http://www.youtube.com/watch?v=MR53Xgeg28Y "JAVA JDBC CON BASE DE DATOS ORACLE")
+
+
+## ORACLE PL/SQL
+
+- Enlace: https://www.udemy.com/course/lenguaje-plsql/?referralCode=3B8A67CA0AADFCFB930C
+
+[![ORACLE PL/SQL](https://raw.githubusercontent.com/gcoronelc/UDEMY/master/cursos/plsql.png)](https://youtu.be/qf5IF2dJtQc "ORACLE PL/SQL")
 
 
 
