@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -52,7 +53,23 @@
 			</div>
 		</div>
 		
-		<h2><%= request.getAttribute("mensaje") %></h2>
+		<c:if test="${requestScope.promedio != null }">
+			<div class="card mt-2">
+				<div class="card-header">RESULTADO</div>
+				<div class="card-body">
+				
+					<form>
+						<div class="form-group row">
+							<label for="numero" class="col-sm-2 col-form-label">Promedio</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control"  name="numero" value="${requestScope.promedio }" disabled="disabled">
+							</div>
+						</div>
+					</form>
+	
+				</div>
+			</div>
+		</c:if>
 		
 
 	</div>

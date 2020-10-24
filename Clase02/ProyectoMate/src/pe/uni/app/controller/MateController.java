@@ -46,8 +46,16 @@ public class MateController extends HttpServlet {
 	private void promedio(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.setAttribute("mensaje", "Pronto, ten en cuenta que estamos aprendiendo java web desde cero.");
-
+		// Datos
+		int nota1 = Integer.parseInt(request.getParameter("nota1"));
+		int nota2 = Integer.parseInt(request.getParameter("nota2"));
+		int nota3 = Integer.parseInt(request.getParameter("nota3"));
+		int nota4 = Integer.parseInt(request.getParameter("nota4"));
+		// Proceso
+		MateService service = new MateService();
+		int pr = service.promedio(nota1, nota2, nota3, nota4);
+		// Reporte
+		request.setAttribute("promedio", pr);
 		// Forward
 		RequestDispatcher rd = request.getRequestDispatcher("promedio.jsp");
 		rd.forward(request, response);
