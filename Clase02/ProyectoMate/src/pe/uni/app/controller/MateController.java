@@ -14,16 +14,47 @@ import pe.uni.app.service.MateService;
 /**
  * Servlet implementation class MateController
  */
-@WebServlet({ "/MateController", "/Factorial", "/Promedio" })
+@WebServlet({ "/McdMcm", "/Factorial", "/Promedio" })
 public class MateController extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
-       
 
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
-	/**
-	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String path = request.getServletPath();
+		switch (path) {
+		case "/Factorial":
+			factorial(request, response);
+			break;
+		case "/Promedio":
+			promedio(request, response);
+			break;
+		case "/McdMcm":
+			mcdMcm(request, response);
+			break;
+		}
+
+	}
+
+	private void mcdMcm(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private void promedio(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		request.setAttribute("mensaje", "Pronto, ten en cuenta que estamos aprendiendo java web desde cero.");
+
+		// Forward
+		RequestDispatcher rd = request.getRequestDispatcher("promedio.jsp");
+		rd.forward(request, response);
+	}
+
+	protected void factorial(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// Datos
 		int numero = Integer.parseInt(request.getParameter("numero"));
 		// Proceso
