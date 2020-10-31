@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+
+		<h1>DEMO DE CRUD</h1>
+
+		<div class="form-group row">
+			<button type="button" class="btn btn-primary" id="btnNuevo">Nuevo</button>
+		</div>
+
+
+		<div class="card" id="divFormulario">
+			<div class="card-header">DATOS EL AMIGO</div>
+			<div class="card-body">
+
+				<form id="frmDatos">
+
+					<div class="form-group row">
+						<label for="capital" class="col-sm-2 col-form-label">ID</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" name="id"
+								id="id">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="tiempo" class="col-sm-2 col-form-label">NOMBRE</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" name="nombre"
+								id="nombre">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="nriesgo" class="col-sm-2 col-form-label">EDAD</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" name="edad"
+								id="edad">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<button type="button" class="btn btn-primary" id="btnGrabar">Grabar</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="card" id="divResultado">
+
+			<div class="card-header">LISTADO</div>
+
+			<div class="card-body">
+
+				<table class="table table-striped" id="tablaResultado">
+					<thead class="thead-light">
+						<tr>
+							<th>ID</th>
+							<th>NOMBRE</th>
+							<th>EDAD</th>
+							<th>ACCIONES</th>
+						</tr>
+					</thead>
+					<tbody id="tablaBody">
+						<tr>
+							<td>1</td>
+							<td>GUSTAVO</td>
+							<td>50</td>
+							<td>Editar Eliinar</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+
+	<script src="js/index.js"></script>
+
+</body>
+</html>
