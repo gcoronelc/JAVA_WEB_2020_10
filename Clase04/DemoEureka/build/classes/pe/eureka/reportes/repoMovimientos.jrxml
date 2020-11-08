@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="REPORTE DE MOVIMIENTOS" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6d8934a-f05c-4e4d-af98-c1b383a9a20c">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select cuencodigo, movinumero, movifecha, tiponombre, moviimporte from eureka.v_movimientos]]>
+	</queryString>
+	<field name="CUENCODIGO" class="java.lang.String"/>
+	<field name="MOVINUMERO" class="java.math.BigDecimal"/>
+	<field name="MOVIFECHA" class="java.lang.String"/>
+	<field name="TIPONOMBRE" class="java.lang.String"/>
+	<field name="MOVIIMPORTE" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="179" height="31" uuid="efb2b579-764b-44bd-8246-bb3571a526ef"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EUREKA BANK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="31" width="179" height="20" uuid="56ed0e02-23ec-4d75-bc4f-facb919937f8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ven que quiero tú plata]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="26" uuid="f53fceae-511b-4190-b514-61de7943af3d"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Movimientos de la cuenta: " + $F{CUENCODIGO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="e179c08c-f3d9-4be9-bc80-69af93b6dd93"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[MOVINUMERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="8b2bf545-833a-4342-8901-6e929cf90ef9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[MOVIFECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="178" height="20" uuid="15e4264f-145b-4da1-bd07-39cc0bf21f57"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TIPONOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="0" width="128" height="20" uuid="ad947c11-30e4-428c-8a85-7f3533917671"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[MOVIIMPORTE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="2146dff2-09e4-4b50-bebb-eb9ec32775b7"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="d30b90ed-a152-4be8-9543-edb76e124f9f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{MOVINUMERO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="593b9b1c-d7bc-4bec-8e87-a2898d4f8cea"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{MOVIFECHA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="178" height="20" uuid="803f0ecb-bc3b-4455-9b38-b981f61d7434"/>
+				<textFieldExpression><![CDATA[$F{TIPONOMBRE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="0" width="128" height="20" uuid="08782e67-64a2-4a57-a332-188689be28b0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{MOVIIMPORTE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

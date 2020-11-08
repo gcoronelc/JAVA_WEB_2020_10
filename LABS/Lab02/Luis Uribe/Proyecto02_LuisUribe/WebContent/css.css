@@ -1,0 +1,120 @@
+
+body{
+    background: #b1eaef;
+    margin: 0;
+    color: white;
+}
+.principal{
+    margin: 0 auto;
+    width: 900px;
+    border: 1px solid black;
+}
+.encabezado{
+    background-image: url("encabezado.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 94px;
+}
+.menu{
+    width: 180px;
+    float: left;
+    height: 100vh;
+    background: #0096d5;
+}
+.contenido{
+    margin-top: 0px;
+    margin-left: 180px;
+    height: 100vh;
+    background: #00a8ee;
+    overflow: auto;
+}
+.listas {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;    
+    width: 150px;
+}
+.listas a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 0px;
+    border-bottom: 1px solid #00a8ee;
+    background-image: linear-gradient(#0096d5,#0096d5,#0096d5);
+    transition: all 0.5s ease-in-out;
+}
+.listas a:hover {
+    color: #f4aa09;
+    background-image: linear-gradient(#0096d5,#0096d5,#00a8ee);
+}
+.tablaDatos{
+    margin: 20px auto;
+    min-width: 500px;
+    border: 1px solid black;
+    border-collapse: collapse; 
+    color: black;
+}
+.tablaDatos th{
+    border: 1px solid black;
+    background: #aeeef1;
+}
+
+.tablaDatos td{
+    background: #e6fbfc;
+    text-align: center;
+}
+.tablaFrm{
+    margin: 20px auto;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    background: #e6fbfc;
+    padding: 10px;
+    color: black;
+}
+.tablaFrm td:nth-child(1){
+    text-align: right;
+}
+.tablaFrm td{
+    padding-bottom: 10px;
+}
+.tablaFrm input[type="text"]{
+    padding: 6px;
+    background: #f3fbfc;
+}
+.tablaFrm select{
+    padding: 8px;
+    
+}
+.tablaFrm button{
+    padding: 8px;
+    font-weight: bold;
+    background: #2481e4;
+    cursor: pointer;
+    transition: background 0.32s ease-in-out;
+}
+.tablaFrm button:hover{
+    background: #00a8ee;
+}
+
+
+.titulo{
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto{
+    font-size: 18px;
+    margin: 10px;
+    padding-left: 40px;
+}
+
+.contenedor{
+    padding: 12px;
+}
+
+
